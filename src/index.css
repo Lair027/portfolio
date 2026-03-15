@@ -1,0 +1,8 @@
+/* Import original CSS files */
+@import './style.css';
+@import './about-me-animation.css';
+@import './projects-decorations.css';
+@import './custom-fixes.css';
+@import './certificate-viewer.css';
+
+/* Font Awesome CDN - add this to public/index.html instead */
