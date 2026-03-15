@@ -78,7 +78,7 @@ const Home: React.FC = () => {
             </div>
             <div className="corner-highlight"></div>
             <div className="home-profile-thumb">
-              <img src={process.env.PUBLIC_URL + '/main.jpg'} alt="Profile Thumb" />
+              <img src={'/main.jpg'} alt="Profile Thumb" />
             </div>
             {/* Decorative elements for the insta-frame background */}
             <div className="insta-frame-decorations">
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
             </div>
             <div className="image-container">
               <div className="hsr-slant">
-                <img src={process.env.PUBLIC_URL + '/secondPic.png'} alt="Profile Picture" className="main-profile-img" />
+                <img src={'/secondPic.png'} alt="Profile Picture" className="main-profile-img" />
               </div>
             </div>
             <div className="insta-actions">

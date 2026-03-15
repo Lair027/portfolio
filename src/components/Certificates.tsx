@@ -102,7 +102,7 @@ const Certificates: React.FC = () => {
           {/* Certificate 1 */}
           <div className="certificate-item" onClick={() => openFullscreen(0)}>
             <div className="certificate-image">
-              <img src={process.env.PUBLIC_URL + '/certificates/certificate1.jpg'} alt="Webinar Certificate 1" />
+              <img src={'/certificates/certificate1.jpg'} alt="Webinar Certificate 1" />
               <div className="certificate-overlay">
                 <div className="certificate-title">{certificates[0].title}</div>
                 <div className="certificate-description">{certificates[0].description}</div>
@@ -113,7 +113,7 @@ const Certificates: React.FC = () => {
           {/* Certificate 2 */}
           <div className="certificate-item" onClick={() => openFullscreen(1)}>
             <div className="certificate-image">
-              <img src={process.env.PUBLIC_URL + '/certificates/certificate2.jpg'} alt="Webinar Certificate 2" />
+              <img src={'/certificates/certificate2.jpg'} alt="Webinar Certificate 2" />
               <div className="certificate-overlay">
                 <div className="certificate-title">{certificates[1].title}</div>
                 <div className="certificate-description">{certificates[1].description}</div>
@@ -127,7 +127,7 @@ const Certificates: React.FC = () => {
           {/* Certificate 3 */}
           <div className="certificate-item" onClick={() => openFullscreen(2)}>
             <div className="certificate-image">
-              <img src={process.env.PUBLIC_URL + '/certificates/certificate3.jpg'} alt="Webinar Certificate 3" />
+              <img src={'/certificates/certificate3.jpg'} alt="Webinar Certificate 3" />
               <div className="certificate-overlay">
                 <div className="certificate-title">{certificates[2].title}</div>
                 <div className="certificate-description">{certificates[2].description}</div>
@@ -138,7 +138,7 @@ const Certificates: React.FC = () => {
           {/* Certificate 4 */}
           <div className="certificate-item" onClick={() => openFullscreen(3)}>
             <div className="certificate-image">
-              <img src={process.env.PUBLIC_URL + '/certificates/certificate4.jpg'} alt="Webinar Certificate 4" />
+              <img src={'/certificates/certificate4.jpg'} alt="Webinar Certificate 4" />
               <div className="certificate-overlay">
                 <div className="certificate-title">{certificates[3].title}</div>
                 <div className="certificate-description">{certificates[3].description}</div>
@@ -152,7 +152,7 @@ const Certificates: React.FC = () => {
           {/* Certificate 5 */}
           <div className="certificate-item" onClick={() => openFullscreen(4)}>
             <div className="certificate-image">
-              <img src={process.env.PUBLIC_URL + '/certificates/certificate5.jpg'} alt="Webinar Certificate 5" />
+              <img src={'/certificates/certificate5.jpg'} alt="Webinar Certificate 5" />
               <div className="certificate-overlay">
                 <div className="certificate-title">{certificates[4].title}</div>
                 <div className="certificate-description">{certificates[4].description}</div>
@@ -163,7 +163,7 @@ const Certificates: React.FC = () => {
           {/* Certificate 6 */}
           <div className="certificate-item" onClick={() => openFullscreen(5)}>
             <div className="certificate-image">
-              <img src={process.env.PUBLIC_URL + '/certificates/certificate6.jpg'} alt="Webinar Certificate 6" />
+              <img src={'/certificates/certificate6.jpg'} alt="Webinar Certificate 6" />
               <div className="certificate-overlay">
                 <div className="certificate-title">{certificates[5].title}</div>
                 <div className="certificate-description">{certificates[5].description}</div>
@@ -184,7 +184,7 @@ const Certificates: React.FC = () => {
           </div>
           <div className="fullscreen-image">
             <img 
-              src={process.env.PUBLIC_URL + fullscreen.images[fullscreen.currentIndex]} 
+              src={fullscreen.images[fullscreen.currentIndex]} 
               alt={`Certificate ${fullscreen.currentIndex + 1}`}
               id="fullscreen-certificate-img"
             />

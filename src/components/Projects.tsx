@@ -186,7 +186,7 @@ const Projects: React.FC = () => {
         <div className="project-item wide exam">
           <div className="project-image">
             <a href="#!" className="project-link" onClick={(e) => { e.preventDefault(); openModal('exam'); }}></a>
-            <img src={process.env.PUBLIC_URL + '/projects/exam.io/exam.io-main.png'} alt="Exam.io Project" />
+            <img src={'/projects/exam.io/exam.io-main.png'} alt="Exam.io Project" />
             <div className="project-overlay">
               <h3>Exam.io</h3>
               <p>Online examination and assessment platform</p>
@@ -199,7 +199,7 @@ const Projects: React.FC = () => {
         <div className="project-item duel-learn">
           <div className="project-image">
             <a href="#!" className="project-link" onClick={(e) => { e.preventDefault(); openModal('duel-learn'); }}></a>
-            <img src={process.env.PUBLIC_URL + '/projects/duel-learn/duel-learn-main.png'} alt="Duel Learn Project" />
+            <img src={'/projects/duel-learn/duel-learn-main.png'} alt="Duel Learn Project" />
             <div className="project-overlay">
               <h3>Duel Learn</h3>
               <p>Educational gaming platform with interactive learning tools</p>
@@ -212,7 +212,7 @@ const Projects: React.FC = () => {
         <div className="project-item portrait kopilism">
           <div className="project-image">
             <a href="#!" className="project-link" onClick={(e) => { e.preventDefault(); openModal('kopilism'); }}></a>
-            <img src={process.env.PUBLIC_URL + '/projects/kopilism/kopilism-app-main.png'} alt="Kopilism App" />
+            <img src={'/projects/kopilism/kopilism-app-main.png'} alt="Kopilism App" />
             <div className="project-overlay">
               <h3>Kopilism</h3>
               <p>Coffee shop management system with user authentication</p>
@@ -225,7 +225,7 @@ const Projects: React.FC = () => {
         <div className="project-item wide orderly">
           <div className="project-image">
             <a href="#!" className="project-link" onClick={(e) => { e.preventDefault(); openModal('orderly'); }}></a>
-            <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites-main.png'} alt="Orderly Bytes Project" />
+            <img src={'/projects/orderly-bites/orderly-bites-main.png'} alt="Orderly Bytes Project" />
             <div className="project-overlay">
               <h3>Orderly Bytes</h3>
               <p>Food ordering and restaurant management application</p>
@@ -266,19 +266,19 @@ const Projects: React.FC = () => {
             {/* Gallery */}
             <div className="modal-gallery">
               <div className="modal-main-image" onClick={() => handleImageClick('exam', 0)}>
-                <img src={process.env.PUBLIC_URL + '/projects/exam.io/exam.io-main.png'} alt="Exam.io main screenshot" />
+                <img src={'/projects/exam.io/exam.io-main.png'} alt="Exam.io main screenshot" />
               </div>
               <div className="modal-secondary-images">
                 {[1, 2, 3, 4, 5, 6].map((i) => (
                   <div key={i} className="modal-secondary-image" onClick={() => handleImageClick('exam', i)}>
-                    <img src={process.env.PUBLIC_URL + `/projects/exam.io/exam.io${i}.png`} alt={`Exam.io screenshot ${i}`} />
+                    <img src={`/projects/exam.io/exam.io${i}.png`} alt={`Exam.io screenshot ${i}`} />
                   </div>
                 ))}
               </div>
               <div className="modal-additional-images">
                 {[7, 8].map((i) => (
                   <div key={i} className="modal-additional-image" onClick={() => handleImageClick('exam', i)}>
-                    <img src={process.env.PUBLIC_URL + `/projects/exam.io/exam.io${i}.png`} alt={`Exam.io screenshot ${i}`} />
+                    <img src={`/projects/exam.io/exam.io${i}.png`} alt={`Exam.io screenshot ${i}`} />
                   </div>
                 ))}
               </div>
@@ -349,25 +349,25 @@ const Projects: React.FC = () => {
             {/* Gallery */}
             <div className="modal-gallery">
               <div className="modal-main-image" onClick={() => handleImageClick('duel-learn', 0)}>
-                <img src={process.env.PUBLIC_URL + '/projects/duel-learn/duel-learn-main.png'} alt="Duel Learn main screenshot" />
+                <img src={'/projects/duel-learn/duel-learn-main.png'} alt="Duel Learn main screenshot" />
               </div>
               {/* Video preview */}
               <div className="modal-main-video" style={{ position: 'relative', margin: '18px 0 10px 0', borderRadius: '14px', overflow: 'hidden', border: '3px solid #8AA8BF', boxShadow: '0 0 16px 0 rgba(138,168,191,0.18)', maxWidth: '480px', marginLeft: 'auto', marginRight: 'auto' }}>
-                <video className="duel-learn-video" src={process.env.PUBLIC_URL + '/projects/duel-learn/2025-05-22 01-00-51.mp4'} controls poster={process.env.PUBLIC_URL + '/projects/duel-learn/duel-learn-main.png'} style={{ width: '100%', display: 'block', background: '#222' }}>
+                <video className="duel-learn-video" src={'/projects/duel-learn/2025-05-22 01-00-51.mp4'} controls poster={'/projects/duel-learn/duel-learn-main.png'} style={{ width: '100%', display: 'block', background: '#222' }}>
                   Your browser does not support the video tag.
                 </video>
               </div>
               <div className="modal-secondary-images">
                 {[2, 3, 4, 5, 6, 7].map((i) => (
                   <div key={i} className="modal-secondary-image" onClick={() => handleImageClick('duel-learn', i - 1)}>
-                    <img src={process.env.PUBLIC_URL + `/projects/duel-learn/duel-learn${i}.png`} alt={`Duel Learn screenshot ${i}`} />
+                    <img src={`/projects/duel-learn/duel-learn${i}.png`} alt={`Duel Learn screenshot ${i}`} />
                   </div>
                 ))}
               </div>
               <div className="modal-additional-images">
                 {[8, 9, 10, 11, 12, 13].map((i) => (
                   <div key={i} className="modal-additional-image" onClick={() => handleImageClick('duel-learn', i - 1)}>
-                    <img src={process.env.PUBLIC_URL + `/projects/duel-learn/duel-learn${i}.png`} alt={`Duel Learn screenshot ${i}`} />
+                    <img src={`/projects/duel-learn/duel-learn${i}.png`} alt={`Duel Learn screenshot ${i}`} />
                   </div>
                 ))}
               </div>
@@ -438,19 +438,19 @@ const Projects: React.FC = () => {
             {/* Gallery */}
             <div className="modal-gallery">
               <div className="modal-main-image" onClick={() => handleImageClick('kopilism', 0)}>
-                <img src={process.env.PUBLIC_URL + '/projects/kopilism/kopilism-app-main.png'} alt="Kopilism main screenshot" />
+                <img src={'/projects/kopilism/kopilism-app-main.png'} alt="Kopilism main screenshot" />
               </div>
               <div className="modal-secondary-images">
                 {[2, 3, 4, 5, 6, 7].map((i) => (
                   <div key={i} className="modal-secondary-image" onClick={() => handleImageClick('kopilism', i - 1)}>
-                    <img src={process.env.PUBLIC_URL + `/projects/kopilism/kopilism${i}.png`} alt={`Kopilism screenshot ${i}`} />
+                    <img src={`/projects/kopilism/kopilism${i}.png`} alt={`Kopilism screenshot ${i}`} />
                   </div>
                 ))}
               </div>
               <div className="modal-additional-images">
                 {[8, 9, 10, 11, 12, 13].map((i) => (
                   <div key={i} className="modal-additional-image" onClick={() => handleImageClick('kopilism', i - 1)}>
-                    <img src={process.env.PUBLIC_URL + `/projects/kopilism/kopilism${i}.png`} alt={`Kopilism screenshot ${i}`} />
+                    <img src={`/projects/kopilism/kopilism${i}.png`} alt={`Kopilism screenshot ${i}`} />
                   </div>
                 ))}
               </div>
@@ -523,32 +523,32 @@ const Projects: React.FC = () => {
             {/* Gallery */}
             <div className="modal-gallery">
               <div className="modal-main-image" onClick={() => handleImageClick('orderly', 0)}>
-                <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites-main.png'} alt="Orderly Bytes main screenshot" />
+                <img src={'/projects/orderly-bites/orderly-bites-main.png'} alt="Orderly Bytes main screenshot" />
               </div>
               <div className="modal-secondary-images">
                 <div className="modal-secondary-image" onClick={() => handleImageClick('orderly', 7)}>
-                  <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites7.png'} alt="Orderly Bytes sales report" />
+                  <img src={'/projects/orderly-bites/orderly-bites7.png'} alt="Orderly Bytes sales report" />
                 </div>
                 <div className="modal-secondary-image" onClick={() => handleImageClick('orderly', 8)}>
-                  <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites8.png'} alt="Orderly Bytes employee management" />
+                  <img src={'/projects/orderly-bites/orderly-bites8.png'} alt="Orderly Bytes employee management" />
                 </div>
                 <div className="modal-secondary-image" onClick={() => handleImageClick('orderly', 9)}>
-                  <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites9.png'} alt="Orderly Bytes discount management" />
+                  <img src={'/projects/orderly-bites/orderly-bites9.png'} alt="Orderly Bytes discount management" />
                 </div>
                 <div className="modal-secondary-image" onClick={() => handleImageClick('orderly', 10)}>
-                  <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites10.png'} alt="Orderly Bytes inventory management" />
+                  <img src={'/projects/orderly-bites/orderly-bites10.png'} alt="Orderly Bytes inventory management" />
                 </div>
                 <div className="modal-secondary-image" onClick={() => handleImageClick('orderly', 1)}>
-                  <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites1.png'} alt="Orderly Bytes fruit tea" />
+                  <img src={'/projects/orderly-bites/orderly-bites1.png'} alt="Orderly Bytes fruit tea" />
                 </div>
                 <div className="modal-secondary-image" onClick={() => handleImageClick('orderly', 2)}>
-                  <img src={process.env.PUBLIC_URL + '/projects/orderly-bites/orderly-bites2.png'} alt="Orderly Bytes hazelnut almonds" />
+                  <img src={'/projects/orderly-bites/orderly-bites2.png'} alt="Orderly Bytes hazelnut almonds" />
                 </div>
               </div>
               <div className="modal-additional-images">
                 {[3, 4, 5, 6].map((i) => (
                   <div key={i} className="modal-additional-image" onClick={() => handleImageClick('orderly', i)}>
-                    <img src={process.env.PUBLIC_URL + `/projects/orderly-bites/orderly-bites${i}.png`} alt={`Orderly Bytes screenshot ${i}`} />
+                    <img src={`/projects/orderly-bites/orderly-bites${i}.png`} alt={`Orderly Bytes screenshot ${i}`} />
                   </div>
                 ))}
               </div>
@@ -639,7 +639,7 @@ const Projects: React.FC = () => {
           <div className="fullscreen-close" onClick={closeFullscreen}><i className="fas fa-times"></i></div>
           <div className="fullscreen-nav prev" onClick={() => navigateFullscreen('prev')}><i className="fas fa-chevron-left"></i></div>
           <div className="fullscreen-image">
-            <img src={process.env.PUBLIC_URL + fullscreen.images[fullscreen.currentIndex]} alt="Fullscreen" id="fullscreen-img" />
+            <img src={fullscreen.images[fullscreen.currentIndex]} alt="Fullscreen" id="fullscreen-img" />
           </div>
           <div className="fullscreen-nav next" onClick={() => navigateFullscreen('next')}><i className="fas fa-chevron-right"></i></div>
           <div className="fullscreen-counter">
